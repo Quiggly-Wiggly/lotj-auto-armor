@@ -19,7 +19,7 @@ if tostring(AutoArmor.version or ""):match("^2%.1%.") then
   end
 end
 
-AutoArmor.version = "2.3.0"
+AutoArmor.version = "2.3.1"
 
 if AutoArmor.keyword and #AutoArmor.queue == 0 then
   table.insert(AutoArmor.queue, AutoArmor.keyword)
@@ -167,7 +167,8 @@ end
 function AutoArmor.commandRow(cmd,description)
   AutoArmor.text('command','  '); setFgColor(unpack(colors.command))
   if echoLink and printCmdLine then
-    echoLink(cmd,function() printCmdLine(cmd:gsub('<.*','')) end,'Fill the input line; review and press Enter.',true)
+    local draft=cmd:gsub('<.*','') -- Keep only the text, not gsub's second return value.
+    echoLink(cmd,function() printCmdLine(draft) end,'Fill the input line; review and press Enter.',true)
   else echo(cmd) end
   AutoArmor.text('muted','  '..description..'\n')
 end

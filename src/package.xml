@@ -266,7 +266,7 @@
 	<ActionPackage />
 	<ScriptPackage>
 		<Script isActive="yes" isFolder="no">
-			<name>AutoArmor Core v2.3.0</name>
+			<name>AutoArmor Core v2.3.1</name>
 			<packageName>AutoArmorEnhanced</packageName>
 				<script source="scripts/core.lua" />
 			<eventHandlerList />

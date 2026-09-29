@@ -7,7 +7,7 @@ import zipfile
 ROOT=Path(__file__).resolve().parents[1]
 PACKAGE='AutoArmorEnhanced'
 TITLE='LotJ Auto Armor'
-VERSION='2.3.0'
+VERSION='2.3.1'
 ARTIFACT='LotJ Auto Armor.mpackage'
 
 def package_files():
