@@ -1,0 +1,279 @@
+<MudletPackage version="1.001">
+	<TriggerPackage>
+		<TriggerGroup isActive="yes" isFolder="yes" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+			<name>AutoArmor</name>
+			<script />
+			<triggerType>0</triggerType>
+			<conditonLineDelta>0</conditonLineDelta>
+			<mStayOpen>0</mStayOpen>
+			<mCommand />
+			<packageName>AutoArmorEnhanced</packageName>
+			<mFgColor>#ff0000</mFgColor>
+			<mBgColor>#ffff00</mBgColor>
+			<mSoundFile />
+			<colorTriggerFgColor>#000000</colorTriggerFgColor>
+			<colorTriggerBgColor>#000000</colorTriggerBgColor>
+			<regexCodeList />
+			<regexCodePropertyList />
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.work-continue</name>
+				<script source="scripts/autoarmor-work-continue.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You finish working on .+$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.work-complete</name>
+				<script source="scripts/autoarmor-work-complete.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You hold up your finished piece of (.+) armor!$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.enhance-retry</name>
+				<script source="scripts/autoarmor-enhance-retry.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You hold up the enhanced armor only to find that you failed\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.enhance-next</name>
+				<script source="scripts/autoarmor-enhance-next.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You finish adding your (.+) to the armor\.$</string>
+					<string>^This armor already has (.+)!$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.enhance-bad-item</name>
+				<script source="scripts/autoarmor-enhance-bad-item.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^Thats not a piece of armor!$</string>
+					<string>^Thats not the right kind of item\.$</string>
+					<string>^You don't have an item like that\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+					<integer>1</integer>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.botstart</name>
+				<script source="scripts/autoarmor-botstart.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You may now bot again\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.afk-on</name>
+				<script source="scripts/autoarmor-afk-on.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You are now afk\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+			<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
+				<name>autoarmor.afk-off</name>
+				<script source="scripts/autoarmor-afk-off.lua" />
+				<triggerType>0</triggerType>
+				<conditonLineDelta>0</conditonLineDelta>
+				<mStayOpen>0</mStayOpen>
+				<mCommand />
+				<packageName />
+				<mFgColor>#ff0000</mFgColor>
+				<mBgColor>#ffff00</mBgColor>
+				<mSoundFile />
+				<colorTriggerFgColor>#000000</colorTriggerFgColor>
+				<colorTriggerBgColor>#000000</colorTriggerBgColor>
+				<regexCodeList>
+					<string>^You are no longer afk\.$</string>
+				</regexCodeList>
+				<regexCodePropertyList>
+					<integer>1</integer>
+				</regexCodePropertyList>
+			</Trigger>
+		</TriggerGroup>
+	</TriggerPackage>
+	<TimerPackage />
+	<AliasPackage>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>AutoArmor</name>
+			<script />
+			<command />
+			<packageName>AutoArmorEnhanced</packageName>
+			<regex />
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.add</name>
+				<script source="scripts/autoarmor-add.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor add\s+(.+?)\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.enhance</name>
+				<script source="scripts/autoarmor-enhance.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor enhance\s+(\S+)\s+(.+?)\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.start</name>
+				<script source="scripts/autoarmor-start.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor start\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.resume</name>
+				<script source="scripts/autoarmor-resume.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor resume\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.next</name>
+				<script source="scripts/autoarmor-next.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor next\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.stop</name>
+				<script source="scripts/autoarmor-stop.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor stop\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.list</name>
+				<script source="scripts/autoarmor-list.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor list\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.clear</name>
+				<script source="scripts/autoarmor-clear.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor clear\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.status</name>
+				<script source="scripts/autoarmor-status.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor status\s*$</regex>
+			</Alias>
+			<Alias isActive="yes" isFolder="no">
+				<name>autoarmor.help</name>
+				<script source="scripts/autoarmor-help.lua" />
+				<command />
+				<packageName />
+				<regex>^autoarmor(?: help)?\s*$</regex>
+			</Alias>
+		</AliasGroup>
+	</AliasPackage>
+	<ActionPackage />
+	<ScriptPackage>
+		<Script isActive="yes" isFolder="no">
+			<name>AutoArmor Core v2.3.0</name>
+			<packageName>AutoArmorEnhanced</packageName>
+				<script source="scripts/core.lua" />
+			<eventHandlerList />
+		</Script>
+	</ScriptPackage>
+	<KeyPackage />
+	<VariablePackage>
+		<HiddenVariables />
+	</VariablePackage>
+</MudletPackage>

@@ -1,0 +1,1 @@
+AutoArmor.afk = false
